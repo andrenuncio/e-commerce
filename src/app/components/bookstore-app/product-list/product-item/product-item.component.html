@@ -1,1 +1,15 @@
-<p>product-item works!</p>
+<div class="card shadow sm mx-2 my-2">
+    <img [src]="livro.img" alt="" class="bd-placeholder-img card-img-top" width="100%">
+
+    <div class="card-body">
+        <p class="card-text"> {{livro.name}} </p>
+        <p class="card-text"> {{livro.quantity}} </p>
+        <p class="card-text"> {{livro.category}} </p>
+        <p class="card-text"> {{livro.price | currency:'BRL'}}  </p>
+
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm">Comprar</button>
+            <button class="btn btn-danger btn-sm">Denunciar</button>
+        </div>
+    </div>
+</div>
